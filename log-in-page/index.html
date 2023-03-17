@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in page</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .card-header{
+            font-size: 45px;
+        }
+        .card{
+            text-align: center;
+            justify-items: center;
+            background-color: rgb(75, 135, 247);
+            padding: 15%;
+            color: white;
+        }
+        input{
+            padding-left: 5px;
+            height: 30px;
+            border-radius: 10px;
+            border: none;
+            margin-bottom: 5px;
+            width: 50%;
+        }
+        .login{
+            border: none;
+            background-color: rgb(15, 75, 214);
+            color: white;
+            width: 150px;
+            border-radius: 10px;
+            padding: 5px;
+            margin: 20px 10px 10px 10px;
+        }
+        .login:hover{
+            background-color: white;
+            color: rgb(15, 75, 214);
+        }
+        .fg-password{
+            border: none;
+            background-color: rgb(248, 66, 34);
+            color: white;
+            width: 120px;
+            border-radius: 10px;
+            padding: 5px;
+        }
+        .fg-password:hover{
+            color: rgb(248, 66, 34);
+            background-color: white;
+        }
+        .N-account{
+            border: none;
+            background-color: rgb(4, 179, 4);
+            color: white;
+            width: 120px;
+            border-radius: 10px;
+            padding: 5px;
+        }
+        .N-account:hover{
+            background-color: white;
+            color: rgb(4, 179, 4);
+        }
+        a{
+            text-decoration: none;
+        }
+        @media (max-width: 768px) {
+            input{
+            height: 30px;
+            border-radius: 10px;
+            border: none;
+            margin-bottom: 5px;
+            width: 70%;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="card text-center">
+        <div class="card-header">
+          Log in
+        </div><br>
+        <div class="card-body">
+          User Name/ Phone Number <br>
+          <input type="text" placeholder="User Name/ Phone Number"><br>
+          Password <br>
+          <input type="password" placeholder="password"><br>
+          <button class="login">log in</button><br> <button class="fg-password">Forget password</button>
+          <button class="N-account"><a href="new-account/index.html">New Account</a></button>
+
+        </div>
+      </div>
+</body>
+</html>

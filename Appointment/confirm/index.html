@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirm</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        .card{
+            text-align: center;
+            background-color: rgb(75, 135, 247);
+            padding: 15%;
+            color: white;
+        }
+        .card-header{
+            font-size: 45px;
+        }
+        .card-body{
+            text-align: center;
+        }
+        #payment{
+            border: none;
+            background-color: rgb(4, 179, 4);
+            color: white;
+            width: 120px;
+            border-radius: 10px;
+            padding: 5px;
+        }
+        #payment:hover{
+            background-color: white;
+            color: rgb(4, 179, 4);
+        }
+        ul{
+            list-style: none;
+            background-color: rgb(101, 38, 177);
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            justify-items: center;
+            cursor: pointer;
+            border-radius: 10px;
+            margin-top: 10px;
+            line-height: 45px;
+            font-size: 35px;
+        }
+        #payment-list{
+            display: none;
+        }
+        @media (max-width:768px) {
+            ul{
+                display: block;
+                line-height: 25px;
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="card-header">
+          Confirm
+        </div><br>
+        <div class="card-body">
+         <h1> Medical checkup fee: 10$ / 1000TK </h1><br>
+          <button onclick="payment()" id="payment">Payment</button>
+          <ul id="payment-list">
+            <li>Card Pay</li>
+            <li>Bkash</li>
+            <li>Nagad</li>
+            <li>Roket</li>
+            <li>Upay</li>
+          </ul>
+        </div>
+      </div>
+
+      <script>
+      function payment(){
+        const manuBtn=document.getElementById("payment-list");
+         if(manuBtn.style.display != "block") {
+            manuBtn.style.display = "block";
+        }
+        else {
+            manuBtn.style.display = "none";
+        } 
+    }
+      </script>
+</body>
+</html>
